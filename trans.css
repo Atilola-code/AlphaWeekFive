@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+.box{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #dc143c;
+    margin: 60px;
+    margin-block-start: 100px;
+    border: 1px solid #000;
+
+}
+
+#box1 {
+    transform: rotate(45deg);
+}
+
+#box2 {
+    transform: scale(2.5);
+}
+
+#box3 {
+    transform: translate(50px, 20px);
+}
+
+#box1:hover{
+    transform: rotate(0);
+}
+
+#box2:hover{
+    transform: scale(1);
+}
+
+#box3:hover{
+    transform: translate(0, 0);
+} 

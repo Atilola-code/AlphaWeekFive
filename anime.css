@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+.ball{
+    width: 150px;
+    height: 150px;
+    background-color: #ffa500;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    animation: 2s linear 0s 6 alternate-reverse bounce;
+}
+
+
+@keyframes bounce{
+    0%{
+        transform: scaleY(0);
+    }
+    100%{
+        transform: scaleY(0.5);
+    }
+    
+    0%{
+        transform: translateY(74vh);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+    from{
+        background-color: #ffa500;
+    }
+    to{
+        background-color: #00f;
+    }
+
+
+} 
