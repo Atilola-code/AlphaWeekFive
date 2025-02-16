@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+}
+
+.container{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+
+.card{
+    border: 1px solid #000;
+    height:200px;
+    width: calc(200px * 2/3);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    color: #f00;
+    padding: .25em;
+    font-size: 1.25em;
+    transition: rotateY 2s linear 0s;
+    animation: 3s ease-in-out 0s rotateY ;
+    
+
+}
+
+.middle{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+}
+
+.right{
+    transform: rotate(180deg);
+}
+.left > div:first-child, 
+.right > div:first-child{
+ padding-inline-start: .1px;
+}
+
+.middle :nth-child(3),
+.middle :nth-child(4){
+    transform: scale(180deg);
+}
+
+.card:hover{
+    transform: rotateY(180deg) scale(1.5);
+    transition: transform 3s;
+}
+
+@keyframes rotateY{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(180deg);
+    }
+} 
+
+
