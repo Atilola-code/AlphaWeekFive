@@ -38,7 +38,12 @@
 }
 
 .card:hover{
-    transform: rotateY(180deg) scale(1.5);
+    transform: rotateY(90deg) scale(1.5);
+    transition: transform 3s;
+}
+
+.card:active{
+    transform: rotateY(180deg);
     transition: transform 3s;
 }
 

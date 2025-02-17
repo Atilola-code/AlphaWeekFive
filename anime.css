@@ -5,30 +5,27 @@
     font-weight: normal;
 }
 .ball{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     background-color: #ffa500;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    animation: 2s linear 0s 6 alternate-reverse bounce;
+    animation:bounce 2s linear 0s 6 alternate-reverse, height 2s linear 0s 6 alternate-reverse;
+
+
 }
 
 
 @keyframes bounce{
-    0%{
-        transform: scaleY(0);
-    }
-    100%{
-        transform: scaleY(0.5);
-    }
+   
     
-    0%{
-        transform: translateY(74vh);
+    from{
+        transform: translateY(80vh);
     }
-    100%{
+    to{
         transform: translateY(0);
     }
     
@@ -38,6 +35,28 @@
     to{
         background-color: #00f;
     }
-
-
 } 
+
+@keyframes height{
+    0%{
+        top: 0%;
+    }
+    
+    20%{
+        top: 80%;
+    }
+    
+    40%{
+        top: 60%;
+    }
+    
+    60%{
+        top: 50%;
+    }
+    
+    100%{
+        top: 0%;
+    }
+    
+    
+}
